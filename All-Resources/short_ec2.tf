@@ -1,0 +1,8 @@
+provider "aws" {
+  region = "us-west-1"
+}
+
+resource "aws_instance" "my_instance" {
+  ami = "ami-0e6a50b0059fd2cc3"
+  instance_type = "t3.small"
+}
